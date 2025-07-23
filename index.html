@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Pembelajaran Interaktif Sejarah G30S/PKI</title>
-    <!-- Link ke Tailwind CSS untuk styling dasar -->
+    <!-- Tautan ke Tailwind CSS untuk penataan dasar -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Font Google untuk tampilan vintage */
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&family=Dancing+Script:wght@400;700&display=swap');
 
-        /* Styling tambahan untuk landing page */
+        /* Penataan tambahan untuk halaman landas */
         body {
             font-family: 'Inter', sans-serif; /* Font utama yang bersih */
             background: linear-gradient(135deg, #fef7cd 0%, #fef3c7 25%, #fde68a 50%, #fef3c7 75%, #fef7cd 100%);
@@ -21,8 +21,8 @@
             min-height: 100vh;
             margin: 0;
             color: #4a2f00; /* Warna teks default */
-            scroll-behavior: smooth; /* Untuk scrolling yang halus */
-            overflow-x: hidden; /* Mencegah scroll horizontal */
+            scroll-behavior: smooth; /* Untuk pengguliran yang halus */
+            overflow-x: hidden; /* Mencegah gulir horizontal */
         }
 
         @keyframes gradientBG {
@@ -45,10 +45,10 @@
             padding: 2rem;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
-            border-radius: 1.5rem; /* Sudut yang lebih membulat */
+            border-radius: 1.5rem; /* Sudut yang lebih bulat */
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Bayangan yang lebih dalam */
             position: relative; /* Untuk menampung elemen absolut */
-            z-index: 10; /* Pastikan container di atas elemen latar belakang */
+            z-index: 10; /* Pastikan kontainer di atas elemen latar belakang */
         }
 
         h1 {
@@ -80,7 +80,7 @@
         }
 
         p {
-            font-family: 'Inter', sans-serif; /* Font body dengan font yang lebih bersih */
+            font-family: 'Inter', sans-serif; /* Font isi dengan font yang lebih bersih */
             font-size: 1.15rem;
             line-height: 1.7;
             margin-bottom: 1.75rem;
@@ -90,14 +90,14 @@
         .button-primary {
             background: linear-gradient(to right, #d97706, #b45309); /* Gradien tombol utama */
             color: white;
-            font-family: 'Inter', sans-serif; /* Font body untuk tombol */
+            font-family: 'Inter', sans-serif; /* Font isi untuk tombol */
             font-weight: 600;
             padding: 0.9rem 2rem; /* Padding lebih besar */
-            border-radius: 0.75rem; /* Sudut lebih membulat */
+            border-radius: 0.75rem; /* Sudut lebih bulat */
             transition: all 0.3s ease;
             box-shadow: 0 6px 15px rgba(217, 119, 6, 0.4); /* Bayangan lebih menonjol */
             letter-spacing: 0.5px;
-            display: block; /* Membuat tombol menjadi block-level */
+            display: block; /* Membuat tombol menjadi tingkat blok */
             text-align: center;
         }
 
@@ -109,24 +109,24 @@
         .button-secondary {
             background-color: #fef3c7; /* Warna kuning muda */
             color: #78350f; /* Warna teks coklat tua */
-            font-family: 'Inter', sans-serif; /* Font body untuk tombol */
+            font-family: 'Inter', sans-serif; /* Font isi untuk tombol */
             font-weight: 600;
             padding: 0.9rem 2rem; /* Padding lebih besar */
-            border-radius: 0.75rem; /* Sudut lebih membulat */
+            border-radius: 0.75rem; /* Sudut lebih bulat */
             transition: all 0.3s ease;
-            border: 2px solid #d97706; /* Border coklat */
-            display: block; /* Membuat tombol menjadi block-level */
+            border: 2px solid #d97706; /* Batas coklat */
+            display: block; /* Membuat tombol menjadi tingkat blok */
             text-align: center;
         }
 
         .button-secondary:hover {
-            background-color: #fde68a; /* Warna kuning lebih terang saat hover */
+            background-color: #fde68a; /* Warna kuning lebih terang saat di-hover */
             transform: translateY(-4px);
             box-shadow: 0 6px 15px rgba(217, 119, 6, 0.2);
         }
 
         .section {
-            margin-top: 4rem; /* Jarak antar section lebih besar */
+            margin-top: 4rem; /* Jarak antar bagian lebih besar */
             padding-top: 3rem;
             border-top: 2px solid #e0c98a; /* Garis pemisah yang lebih tebal */
         }
@@ -154,7 +154,7 @@
             position: absolute;
             inset: 0;
             overflow: hidden;
-            z-index: 1; /* Di belakang container */
+            z-index: 1; /* Di belakang kontainer */
         }
         .animated-background div {
             position: absolute;
@@ -177,7 +177,7 @@
             box-shadow: 0 4px 10px rgba(217, 119, 6, 0.2);
         }
 
-        /* Styling untuk Testimoni */
+        /* Penataan untuk Testimoni */
         .testimonial-card {
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid #e0c98a;
@@ -197,7 +197,7 @@
         .testimonial-card .quote {
             font-family: 'Inter', sans-serif; /* Menggunakan font Inter untuk kutipan */
             font-size: 1.15rem; /* Ukuran font disesuaikan agar lebih mudah dibaca */
-            line-height: 1.7; /* Line height disesuaikan */
+            line-height: 1.7; /* Tinggi baris disesuaikan */
             color: #78350f;
             margin-bottom: 1rem;
             font-style: italic;
@@ -218,7 +218,7 @@
             color: #a16207;
         }
 
-        /* Responsive adjustments */
+        /* Penyesuaian responsif */
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             h2 { font-size: 1.75rem; }
@@ -264,13 +264,13 @@
                 <!-- Kolom Aplikasi Web -->
                 <div class="access-card bg-white/60 p-6 rounded-xl border border-amber-200 shadow-lg h-full flex flex-col">
                     <h3>Akses via Web</h3>
-                    <p class="text-amber-700 mb-6 flex-grow text-base">Nikmati kemudahan belajar langsung dari browser Anda, tanpa perlu instalasi apa pun.</p>
+                    <p class="text-amber-700 mb-6 flex-grow text-base">Nikmati kemudahan belajar langsung dari peramban Anda, tanpa perlu instalasi apa pun.</p>
                     <div class="space-y-4">
                         <a href="https://belajar-sejarah-g30s-pki.apipedia.id/" target="_blank" rel="noopener noreferrer" class="button-primary">
                             Buka Aplikasi Web
                         </a>
                         <a href="https://github.com/Cloud-Dark/media-pembelajaran-G30S-PKI-app/tree/main" target="_blank" rel="noopener noreferrer" class="button-secondary">
-                            Alternatif Link & Compile Script
+                            Tautan Alternatif & Skrip Kompilasi
                         </a>
                     </div>
                 </div>
@@ -286,9 +286,11 @@
                         <p class="text-xs mt-3 text-gray-600 text-center mb-0">
                             (File .exe diunduh dari Google Drive)
                         </p>
+                         <a href="https://github.com/Cloud-Dark/media-pembelajaran-G30S-PKI-app/releases" target="_blank" rel="noopener noreferrer" class="button-secondary mt-4">
+                            Tautan Unduhan Alternatif
+                        </a>
                     </div>
                 </div>
-
             </div>
             <!-- ====== AKHIR KONTEN TOMBOL ====== -->
         </section>
@@ -301,7 +303,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <h3 class="text-xl font-bold text-amber-800 mb-3">Modul Interaktif</h3>
-                    <p class="text-sm text-amber-700">Jelajahi timeline, awal mula, puncak masalah, dan dampak G30S/PKI secara mendalam.</p>
+                    <p class="text-sm text-amber-700">Jelajahi lini masa, awal mula, puncak masalah, dan dampak G30S/PKI secara mendalam.</p>
                 </div>
                 <div class="flex flex-col items-center p-6 bg-white/70 rounded-xl shadow-lg border border-amber-200">
                     <div class="feature-icon">
@@ -331,7 +333,7 @@
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p class="quote">"Pembelajaran yang sangat mendalam dan mudah dipahami. AI Assistantnya sangat membantu!"</p>
+                    <p class="quote">"Pembelajaran yang sangat mendalam dan mudah dipahami. Asisten AI-nya sangat membantu!"</p>
                     <div class="author-info">
                         <div class="author">Budi Santoso</div>
                         <div class="role">Mahasiswa Sejarah</div>
